@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="sa-lineage" fetch="https://github.com/snappautomotive" revision="lineage-18.1-AAOS"/>
+
+  <!-- projects with build issues when building AAOS -->
+
+  <remove-project name="LineageOS/android_frameworks_base"/>
+  <project path="frameworks/base" name="firmware_lineage-frameworks_base" remote="sa-lineage"/>
+
+  <remove-project name="platform/packages/apps/Car/Settings"/>
+  <project path="packages/apps/Car/Settings" name="firmware_lineage-packages_apps_car_settings" remote="sa-lineage" />
+
+  <remove-project name="platform/packages/services/Car"/>
+  <project path="packages/services/Car" name="firmware_lineage-packages_services_car" remote="sa-lineage"/>
+
+</manifest>
