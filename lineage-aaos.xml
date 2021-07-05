@@ -5,7 +5,7 @@
   <!-- projects with build issues when building AAOS -->
 
   <remove-project name="LineageOS/android_frameworks_base"/>
-  <project path="frameworks/base" name="firmware_lineage-frameworks_base" remote="sa-lineage"/>
+  <project path="frameworks/base" name="firmware-frameworks_base" remote="sa-lineage"/>
 
   <remove-project name="platform/packages/apps/Car/Settings"/>
   <project path="packages/apps/Car/Settings" name="firmware_lineage-packages_apps_car_settings" remote="sa-lineage" />
