@@ -3,14 +3,15 @@
   <remote name="sa-lineage" fetch="https://github.com/snappautomotive" revision="lineage-18.1-AAOS"/>
 
   <!-- Replace the gts4lv target with a AAOS version -->
+  <!-- These should have already been removed from the roomservice local manifest -->
 
-  <remove-project name="LineageOS/android_device_samsung_gts4lv"/>
   <project path="device/samsung/gts4lv" name="firmware-device_samsung_gts4lvaaos" remote="sa-lineage" />
-
-  <remove-project name="LineageOS/android_device_samsung_gts4lv-common"/>
   <project path="device/samsung/gts4lv-common" name="firmware-device_samsung_gts4lvaaos-common" remote="sa-lineage" />
 
   <!-- projects with build issues when building AAOS -->
+
+  <remove-project name="platform/packages/apps/Car/Launcher"/>
+  <project path="packages/apps/Car/Launcher" name="firmware-packages_apps_car_launcher" remote="sa-lineage" />
 
   <remove-project name="platform/packages/apps/Car/Settings"/>
   <project path="packages/apps/Car/Settings" name="firmware_lineage-packages_apps_car_settings" remote="sa-lineage" />
