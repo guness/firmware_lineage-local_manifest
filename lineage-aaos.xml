@@ -7,6 +7,9 @@
   <remove-project name="LineageOS/android_device_samsung_gts4lv"/>
   <project path="device/samsung/gts4lv" name="firmware-device_samsung_gts4lvaaos" remote="sa-lineage" />
 
+  <remove-project name="LineageOS/android_device_samsung_gts4lv-common"/>
+  <project path="device/samsung/gts4lv-common" name="firmware-device_samsung_gts4lvaaos-common" remote="sa-lineage" />
+
   <!-- projects with build issues when building AAOS -->
 
   <remove-project name="platform/packages/apps/Car/Settings"/>
