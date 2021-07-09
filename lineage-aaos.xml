@@ -6,7 +6,7 @@
   <!-- These should have already been removed from the roomservice local manifest -->
 
   <project path="device/samsung/gts4lv" name="firmware-device_samsung_gts4lvaaos" remote="sa-lineage" />
-  <project path="device/samsung/gts4lv-common" name="firmware-device_samsung_gts4lvaaos-common" remote="sa-lineage" />
+  <project path="device/samsung/gts4lv-common" name="firmware-device_samsung_gts4lvaaos_common" remote="sa-lineage" />
 
   <!-- projects with build issues when building AAOS -->
 
