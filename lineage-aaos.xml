@@ -8,15 +8,4 @@
   <project path="device/samsung/gts4lv" name="firmware-device_samsung_gts4lvaaos" remote="sa-lineage" />
   <project path="device/samsung/gts4lv-common" name="firmware-device_samsung_gts4lvaaos_common" remote="sa-lineage" />
 
-  <!-- projects with build issues when building AAOS -->
-
-  <remove-project name="platform/packages/apps/Car/Launcher"/>
-  <project path="packages/apps/Car/Launcher" name="firmware-packages_apps_car_launcher" remote="sa-lineage" />
-
-  <remove-project name="platform/packages/apps/Car/Settings"/>
-  <project path="packages/apps/Car/Settings" name="firmware_lineage-packages_apps_car_settings" remote="sa-lineage" />
-
-  <remove-project name="platform/packages/services/Car"/>
-  <project path="packages/services/Car" name="firmware_lineage-packages_services_car" remote="sa-lineage"/>
-
 </manifest>
