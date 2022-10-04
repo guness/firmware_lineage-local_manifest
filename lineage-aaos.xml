@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="sa-lineage" fetch="https://github.com/snappautomotive" revision="lineage-18.1-AAOS"/>
+  <remote name="repo-lineage" fetch="https://github.com/guness" revision="lineage-19.1-AAOS"/>
 
-  <!-- Replace the gts4lv target with a AAOS version -->
+  <!-- Replace the gts4lvwifi target with a AAOS version -->
   <!-- These should have already been removed from the roomservice local manifest -->
 
-  <project path="device/samsung/gts4lv" name="firmware-device_samsung_gts4lvaaos" remote="sa-lineage" />
-  <project path="device/samsung/gts4lv-common" name="firmware-device_samsung_gts4lvaaos_common" remote="sa-lineage" />
+  <project path="device/samsung/gts4lvwifi" name="android_device_samsung_gts4lvwifiaaos" remote="repo-lineage" />
+  <project path="device/samsung/gts4lv-common" name="android_device_samsung_gts4lvaaos-common" remote="repo-lineage" />
 
-  <!-- Override the launcher so we can remove Trebuchet during the build -->
-
+  <!-- TODO:// Override the launcher so we can remove Trebuchet during the build -->
   <remove-project name="platform/packages/apps/Car/Launcher"/>
-  <project path="packages/apps/Car/Launcher" name="firmware-packages_apps_car_launcher" remote="sa-lineage" />
+  <project path="packages/apps/Car/Launcher" name="aosp-car-launcher" remote="repo-lineage" />
 
 </manifest>
